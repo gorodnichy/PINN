@@ -1,0 +1,1681 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1251">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List
+href="./Associative_Neural_Networks_Library.files/filelist.xml">
+<title>Associative Neural Networks Library</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Lesha</o:Author>
+  <o:LastAuthor>Lesha</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>22</o:TotalTime>
+  <o:Created>2005-08-15T14:05:00Z</o:Created>
+  <o:LastSaved>2005-08-15T14:05:00Z</o:LastSaved>
+  <o:Pages>4</o:Pages>
+  <o:Words>1491</o:Words>
+  <o:Characters>9260</o:Characters>
+  <o:Company>IMMSP</o:Company>
+  <o:Lines>296</o:Lines>
+  <o:Paragraphs>155</o:Paragraphs>
+  <o:CharactersWithSpaces>10640</o:CharactersWithSpaces>
+  <o:Version>9.2812</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+@font-face
+	{font-family:Courier;
+	panose-1:0 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:0;
+	mso-generic-font-family:modern;
+	mso-font-format:other;
+	mso-font-pitch:fixed;
+	mso-font-signature:3 0 0 0 1 0;}
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:"Arial Unicode MS";
+	panose-1:2 11 6 4 2 2 2 2 2 4;
+	mso-font-charset:128;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-1 -369098753 63 0 4129279 0;}
+@font-face
+	{font-family:"Courier New CYR";
+	panose-1:2 7 3 9 2 2 5 2 4 4;
+	mso-font-charset:204;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:536902279 -2147483648 8 0 511 0;}
+@font-face
+	{font-family:"\@Arial Unicode MS";
+	panose-1:2 11 6 4 2 2 2 2 2 4;
+	mso-font-charset:128;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-1 -369098753 63 0 4129279 0;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h1
+	{mso-style-next:Обычный;
+	margin:0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:14.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-font-kerning:0pt;
+	mso-ansi-language:EN-US;
+	font-weight:normal;}
+h2
+	{mso-style-next:Обычный;
+	margin:0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	font-size:14.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:EN-US;
+	font-weight:normal;}
+h3
+	{margin-right:0pt;
+	mso-margin-top-alt:auto;
+	mso-margin-bottom-alt:auto;
+	margin-left:0pt;
+	mso-pagination:widow-orphan;
+	mso-outline-level:3;
+	font-size:13.5pt;
+	font-family:"Arial Unicode MS";}
+h4
+	{mso-style-next:Обычный;
+	margin:0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:4;
+	font-size:16.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:EN-US;
+	font-weight:normal;}
+p.MsoToc1, li.MsoToc1, div.MsoToc1
+	{mso-style-update:auto;
+	mso-style-next:Обычный;
+	margin:0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoToc2, li.MsoToc2, div.MsoToc2
+	{mso-style-update:auto;
+	mso-style-next:Обычный;
+	margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:12.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoToc3, li.MsoToc3, div.MsoToc3
+	{mso-style-update:auto;
+	mso-style-next:Обычный;
+	margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:24.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoToc4, li.MsoToc4, div.MsoToc4
+	{mso-style-update:auto;
+	mso-style-next:Обычный;
+	margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoToc5, li.MsoToc5, div.MsoToc5
+	{mso-style-update:auto;
+	mso-style-next:Обычный;
+	margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:48.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoToc6, li.MsoToc6, div.MsoToc6
+	{mso-style-update:auto;
+	mso-style-next:Обычный;
+	margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:60.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoToc7, li.MsoToc7, div.MsoToc7
+	{mso-style-update:auto;
+	mso-style-next:Обычный;
+	margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:72.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoToc8, li.MsoToc8, div.MsoToc8
+	{mso-style-update:auto;
+	mso-style-next:Обычный;
+	margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:84.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoToc9, li.MsoToc9, div.MsoToc9
+	{mso-style-update:auto;
+	mso-style-next:Обычный;
+	margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:96.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{margin:0pt;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	font-size:18.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:EN-US;}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:0pt;
+	text-align:justify;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:EN-US;}
+p.MsoBodyText2, li.MsoBodyText2, div.MsoBodyText2
+	{margin:0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:EN-US;
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+p.zzz, li.zzz, div.zzz
+	{mso-style-name:zzz;
+	margin:0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:30.0pt 30.0pt 30.0pt 40.0pt;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+@list l0
+	{mso-list-id:23604516;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-707000172 572936792 68747267 68747269 68747265 68747267 68747269 68747265 68747267 68747269;}
+@list l0:level1
+	{mso-level-start-at:0;
+	mso-level-number-format:bullet;
+	mso-level-text:-;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+@list l1
+	{mso-list-id:1420907006;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1765366686 572936792 68747267 68747269 68747265 68747267 68747269 68747265 68747267 68747269;}
+@list l1:level1
+	{mso-level-start-at:0;
+	mso-level-number-format:bullet;
+	mso-level-text:-;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+@list l2
+	{mso-list-id:1510829318;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-2057821936 572936792 68747267 68747269 68747265 68747267 68747269 68747265 68747267 68747269;}
+@list l2:level1
+	{mso-level-start-at:0;
+	mso-level-number-format:bullet;
+	mso-level-text:-;
+	mso-level-tab-stop:18.0pt;
+	mso-level-number-position:left;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+@list l2:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:54.0pt;
+	mso-level-number-position:left;
+	margin-left:54.0pt;
+	text-indent:-18.0pt;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l2:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:90.0pt;
+	mso-level-number-position:left;
+	margin-left:90.0pt;
+	text-indent:-18.0pt;
+	font-family:Wingdings;}
+@list l2:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:126.0pt;
+	mso-level-number-position:left;
+	margin-left:126.0pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l2:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:162.0pt;
+	mso-level-number-position:left;
+	margin-left:162.0pt;
+	text-indent:-18.0pt;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l3
+	{mso-list-id:1823036461;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1036396458 572936792 68747267 68747269 68747265 68747267 68747269 68747265 68747267 68747269;}
+@list l3:level1
+	{mso-level-start-at:0;
+	mso-level-number-format:bullet;
+	mso-level-text:-;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+ol
+	{margin-bottom:0pt;}
+ul
+	{margin-bottom:0pt;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="2050"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body bgcolor=white
+background="./Associative_Neural_Networks_Library.files/image001.jpg" lang=RU
+link=blue vlink=purple style='tab-interval:35.4pt'>
+<!--[if gte mso 9]><xml>
+ <v:background id="_x0000_s1025" o:bwmode="white" o:targetscreensize="800,600">
+  <v:fill src="./Associative_Neural_Networks_Library.files/image001.jpg"
+   o:title="texture - lgrey035_bright" type="frame"/>
+ </v:background></xml><![endif]-->
+
+<div class=Section1>
+
+<p class=MsoTitle><b><span lang=EN-US style='font-size:20.0pt;mso-bidi-font-size:
+12.0pt;font-family:Courier'>Associative Neural Networks Library<o:p></o:p></span></b></p>
+
+<p class=MsoTitle><span lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoToc1 style='tab-stops:right dotted 524.8pt'><!--[if supportFields]><span
+style='mso-element:field-begin'></span><span style="mso-spacerun:
+yes"> </span>TOC \o &quot;1-3&quot; \h \z <span style='mso-element:field-separator'></span><![endif]--><span
+class=MsoHyperlink><a href="#_Toc111886146"><span style='mso-bidi-font-size:
+14.0pt'>Overview</span><span style='color:windowtext;display:none;mso-hide:
+screen;text-decoration:none;text-underline:none'><span style='mso-tab-count:
+1 dotted'>... </span></span><!--[if supportFields]><span style='color:windowtext;
+display:none;mso-hide:screen;text-decoration:none;text-underline:none'><span
+style='mso-element:field-begin'></span></span><span style='color:windowtext;
+display:none;mso-hide:screen;text-decoration:none;text-underline:none'> PAGEREF
+_Toc111886146 \h </span><span style='color:windowtext;display:none;mso-hide:
+screen;text-decoration:none;text-underline:none'><span style='mso-element:field-separator'></span></span><![endif]--><span
+style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
+text-underline:none'>1</span><span style='color:windowtext;display:none;
+mso-hide:screen;text-decoration:none;text-underline:none'><!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000E0000005F0054006F0063003100310031003800380036003100340036000000</w:data>
+</xml><![endif]--></span><!--[if supportFields]><span style='color:windowtext;
+display:none;mso-hide:screen;text-decoration:none;text-underline:none'><span
+style='mso-element:field-end'></span></span><![endif]--></a></span><o:p></o:p></p>
+
+<p class=MsoToc1 style='tab-stops:right dotted 524.8pt'><span
+class=MsoHyperlink><a href="#_Toc111886147"><span style='mso-bidi-font-size:
+14.0pt'>Library Description</span><span style='color:windowtext;display:none;
+mso-hide:screen;text-decoration:none;text-underline:none'><span
+style='mso-tab-count:1 dotted'>.. </span></span><!--[if supportFields]><span
+style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
+text-underline:none'><span style='mso-element:field-begin'></span></span><span
+style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
+text-underline:none'> PAGEREF _Toc111886147 \h </span><span style='color:windowtext;
+display:none;mso-hide:screen;text-decoration:none;text-underline:none'><span
+style='mso-element:field-separator'></span></span><![endif]--><span
+style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
+text-underline:none'>2</span><span style='color:windowtext;display:none;
+mso-hide:screen;text-decoration:none;text-underline:none'><!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000E0000005F0054006F0063003100310031003800380036003100340037000000</w:data>
+</xml><![endif]--></span><!--[if supportFields]><span style='color:windowtext;
+display:none;mso-hide:screen;text-decoration:none;text-underline:none'><span
+style='mso-element:field-end'></span></span><![endif]--></a></span><o:p></o:p></p>
+
+<p class=MsoToc1 style='tab-stops:right dotted 524.8pt'><span
+class=MsoHyperlink><a href="#_Toc111886148"><span style='mso-bidi-font-size:
+14.0pt'>Implemented Network Models</span><span style='color:windowtext;
+display:none;mso-hide:screen;text-decoration:none;text-underline:none'><span
+style='mso-tab-count:1 dotted'>. </span></span><!--[if supportFields]><span
+style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
+text-underline:none'><span style='mso-element:field-begin'></span></span><span
+style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
+text-underline:none'> PAGEREF _Toc111886148 \h </span><span style='color:windowtext;
+display:none;mso-hide:screen;text-decoration:none;text-underline:none'><span
+style='mso-element:field-separator'></span></span><![endif]--><span
+style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
+text-underline:none'>2</span><span style='color:windowtext;display:none;
+mso-hide:screen;text-decoration:none;text-underline:none'><!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000E0000005F0054006F0063003100310031003800380036003100340038000000</w:data>
+</xml><![endif]--></span><!--[if supportFields]><span style='color:windowtext;
+display:none;mso-hide:screen;text-decoration:none;text-underline:none'><span
+style='mso-element:field-end'></span></span><![endif]--></a></span><o:p></o:p></p>
+
+<p class=MsoToc1 style='tab-stops:right dotted 524.8pt'><span
+class=MsoHyperlink><a href="#_Toc111886149"><span style='mso-bidi-font-size:
+14.0pt'>Compilation</span><span style='color:windowtext;display:none;
+mso-hide:screen;text-decoration:none;text-underline:none'><span
+style='mso-tab-count:1 dotted'>.. </span></span><!--[if supportFields]><span
+style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
+text-underline:none'><span style='mso-element:field-begin'></span></span><span
+style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
+text-underline:none'> PAGEREF _Toc111886149 \h </span><span style='color:windowtext;
+display:none;mso-hide:screen;text-decoration:none;text-underline:none'><span
+style='mso-element:field-separator'></span></span><![endif]--><span
+style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
+text-underline:none'>3</span><span style='color:windowtext;display:none;
+mso-hide:screen;text-decoration:none;text-underline:none'><!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000E0000005F0054006F0063003100310031003800380036003100340039000000</w:data>
+</xml><![endif]--></span><!--[if supportFields]><span style='color:windowtext;
+display:none;mso-hide:screen;text-decoration:none;text-underline:none'><span
+style='mso-element:field-end'></span></span><![endif]--></a></span><o:p></o:p></p>
+
+<p class=MsoToc1 style='tab-stops:right dotted 524.8pt'><span
+class=MsoHyperlink><a href="#_Toc111886150"><span style='mso-bidi-font-size:
+14.0pt'>Input</span><span style='color:windowtext;display:none;mso-hide:screen;
+text-decoration:none;text-underline:none'><span style='mso-tab-count:1 dotted'>. </span></span><!--[if supportFields]><span
+style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
+text-underline:none'><span style='mso-element:field-begin'></span></span><span
+style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
+text-underline:none'> PAGEREF _Toc111886150 \h </span><span style='color:windowtext;
+display:none;mso-hide:screen;text-decoration:none;text-underline:none'><span
+style='mso-element:field-separator'></span></span><![endif]--><span
+style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
+text-underline:none'>3</span><span style='color:windowtext;display:none;
+mso-hide:screen;text-decoration:none;text-underline:none'><!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000E0000005F0054006F0063003100310031003800380036003100350030000000</w:data>
+</xml><![endif]--></span><!--[if supportFields]><span style='color:windowtext;
+display:none;mso-hide:screen;text-decoration:none;text-underline:none'><span
+style='mso-element:field-end'></span></span><![endif]--></a></span><o:p></o:p></p>
+
+<p class=MsoToc1 style='tab-stops:right dotted 524.8pt'><span
+class=MsoHyperlink><a href="#_Toc111886151"><span style='mso-bidi-font-size:
+14.0pt'>Output</span><span style='color:windowtext;display:none;mso-hide:screen;
+text-decoration:none;text-underline:none'><span style='mso-tab-count:1 dotted'>. </span></span><!--[if supportFields]><span
+style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
+text-underline:none'><span style='mso-element:field-begin'></span></span><span
+style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
+text-underline:none'> PAGEREF _Toc111886151 \h </span><span style='color:windowtext;
+display:none;mso-hide:screen;text-decoration:none;text-underline:none'><span
+style='mso-element:field-separator'></span></span><![endif]--><span
+style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
+text-underline:none'>4</span><span style='color:windowtext;display:none;
+mso-hide:screen;text-decoration:none;text-underline:none'><!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000E0000005F0054006F0063003100310031003800380036003100350031000000</w:data>
+</xml><![endif]--></span><!--[if supportFields]><span style='color:windowtext;
+display:none;mso-hide:screen;text-decoration:none;text-underline:none'><span
+style='mso-element:field-end'></span></span><![endif]--></a></span><o:p></o:p></p>
+
+<p class=MsoToc1 style='tab-stops:right dotted 524.8pt'><span
+class=MsoHyperlink><a href="#_Toc111886152"><span style='mso-bidi-font-size:
+14.0pt'>Author contact details</span><span style='color:windowtext;display:
+none;mso-hide:screen;text-decoration:none;text-underline:none'><span
+style='mso-tab-count:1 dotted'>. </span></span><!--[if supportFields]><span
+style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
+text-underline:none'><span style='mso-element:field-begin'></span></span><span
+style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
+text-underline:none'> PAGEREF _Toc111886152 \h </span><span style='color:windowtext;
+display:none;mso-hide:screen;text-decoration:none;text-underline:none'><span
+style='mso-element:field-separator'></span></span><![endif]--><span
+style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
+text-underline:none'>4</span><span style='color:windowtext;display:none;
+mso-hide:screen;text-decoration:none;text-underline:none'><!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000E0000005F0054006F0063003100310031003800380036003100350032000000</w:data>
+</xml><![endif]--></span><!--[if supportFields]><span style='color:windowtext;
+display:none;mso-hide:screen;text-decoration:none;text-underline:none'><span
+style='mso-element:field-end'></span></span><![endif]--></a></span><o:p></o:p></p>
+
+<p class=MsoToc1 style='tab-stops:right dotted 524.8pt'><span
+class=MsoHyperlink><a href="#_Toc111886153"><span style='mso-bidi-font-size:
+14.0pt'>References</span><span style='color:windowtext;display:none;mso-hide:
+screen;text-decoration:none;text-underline:none'><span style='mso-tab-count:
+1 dotted'>. </span></span><!--[if supportFields]><span style='color:windowtext;
+display:none;mso-hide:screen;text-decoration:none;text-underline:none'><span
+style='mso-element:field-begin'></span></span><span style='color:windowtext;
+display:none;mso-hide:screen;text-decoration:none;text-underline:none'> PAGEREF
+_Toc111886153 \h </span><span style='color:windowtext;display:none;mso-hide:
+screen;text-decoration:none;text-underline:none'><span style='mso-element:field-separator'></span></span><![endif]--><span
+style='color:windowtext;display:none;mso-hide:screen;text-decoration:none;
+text-underline:none'>4</span><span style='color:windowtext;display:none;
+mso-hide:screen;text-decoration:none;text-underline:none'><!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000E0000005F0054006F0063003100310031003800380036003100350033000000</w:data>
+</xml><![endif]--></span><!--[if supportFields]><span style='color:windowtext;
+display:none;mso-hide:screen;text-decoration:none;text-underline:none'><span
+style='mso-element:field-end'></span></span><![endif]--></a></span><o:p></o:p></p>
+
+<p class=MsoTitle><!--[if supportFields]><span lang=EN-US><span
+style='mso-element:field-end'></span></span><![endif]--><span lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<h1><a name="_Toc111886146"><span lang=EN-US style='font-size:16.0pt;
+mso-bidi-font-size:12.0pt'>Overview</span></a><span lang=EN-US
+style='font-size:16.0pt;mso-bidi-font-size:12.0pt'><o:p></o:p></span></h1>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-US
+style='mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoBodyText style='margin-bottom:0pt;margin-bottom:.0001pt'><span
+lang=EN-US>The library provides implementation of various <i>Associative Neural
+Network</i> models. Most of the work has been done as a part of my (still
+ongoing) PhD project and was supported by the INTAS Young Scientist Fellowship
+YSF 03-55-795. </span></p>
+
+<p class=MsoBodyText style='margin-bottom:0pt;margin-bottom:.0001pt'><span
+lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-US
+style='mso-ansi-language:EN-US'>Associative Neural Networks can be used for:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l3 level1 lfo3;tab-stops:list 36.0pt'><![if !supportLists]><span
+lang=EN-US style='mso-ansi-language:EN-US'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US style='mso-ansi-language:EN-US'>Associative
+memories (Content-Addressable Memory);<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l3 level1 lfo3;tab-stops:list 36.0pt'><![if !supportLists]><span
+lang=EN-US style='mso-ansi-language:EN-US'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US style='mso-ansi-language:EN-US'>Classification
+problems;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l3 level1 lfo3;tab-stops:list 36.0pt'><![if !supportLists]><span
+lang=EN-US style='mso-ansi-language:EN-US'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US style='mso-ansi-language:EN-US'>Optimization
+problems.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-US
+style='mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-US
+style='mso-ansi-language:EN-US'>Key features:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l3 level1 lfo3;tab-stops:list 36.0pt'><![if !supportLists]><span
+lang=EN-US style='mso-ansi-language:EN-US'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US style='mso-ansi-language:EN-US'>Distributed
+storage of information;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l3 level1 lfo3;tab-stops:list 36.0pt'><![if !supportLists]><span
+lang=EN-US style='mso-ansi-language:EN-US'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US style='mso-ansi-language:EN-US'>&quot;Graceful
+degradation&quot;, i.e., destruction of individual neurons or of small groups
+of neurons reduces performance, but does not have the devastating effect;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l3 level1 lfo3;tab-stops:list 36.0pt'><![if !supportLists]><span
+lang=EN-US style='mso-ansi-language:EN-US'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US style='mso-ansi-language:EN-US'>Parallel
+mode of operation (hardware friendly);<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l3 level1 lfo3;tab-stops:list 36.0pt'><![if !supportLists]><span
+lang=EN-US style='mso-ansi-language:EN-US'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US style='mso-ansi-language:EN-US'>Different
+learning rules, including fast noniterative one that allows to add/erase data.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-US
+style='mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoBodyText style='margin-bottom:0pt;margin-bottom:.0001pt'><span
+lang=EN-US>The neural network model for associative memory was first proposed
+by J. Hopfield in 1982. It is a dynamical system of simple threshold units
+(neurons). The Hopfield model is fully connected, that is each neuron receives
+outputs from all other neurons (including itself).</span></p>
+
+<p class=MsoBodyText style='margin-bottom:0pt;margin-bottom:.0001pt'><span
+lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoBodyText style='margin-bottom:0pt;margin-bottom:.0001pt'><span
+lang=EN-US>Using the sparsely connected Hopfield network has a number of
+advantages:</span></p>
+
+<p class=MsoBodyText style='margin-top:0pt;margin-right:0pt;margin-bottom:0pt;
+margin-left:36.0pt;margin-bottom:.0001pt;text-indent:-18.0pt;mso-list:l3 level1 lfo3;
+tab-stops:list 36.0pt'><![if !supportLists]><span lang=EN-US>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US>Biologically more feasible structure
+of the network;</span></p>
+
+<p class=MsoBodyText style='margin-top:0pt;margin-right:0pt;margin-bottom:0pt;
+margin-left:36.0pt;margin-bottom:.0001pt;text-indent:-18.0pt;mso-list:l3 level1 lfo3;
+tab-stops:list 36.0pt'><![if !supportLists]><span lang=EN-US>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US>More suitable for hardware
+implementation;</span></p>
+
+<p class=MsoBodyText style='margin-top:0pt;margin-right:0pt;margin-bottom:0pt;
+margin-left:36.0pt;margin-bottom:.0001pt;text-indent:-18.0pt;mso-list:l3 level1 lfo3;
+tab-stops:list 36.0pt'><![if !supportLists]><span lang=EN-US>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US>Faster and requires less memory in
+computer simulations;</span></p>
+
+<p class=MsoBodyText style='margin-top:0pt;margin-right:0pt;margin-bottom:0pt;
+margin-left:36.0pt;margin-bottom:.0001pt;text-indent:-18.0pt;mso-list:l3 level1 lfo3;
+tab-stops:list 36.0pt'><![if !supportLists]><span lang=EN-US>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US>Reveals the influence of network
+connectivity pattern (architecture) on its behaviour.</span></p>
+
+<p class=MsoBodyText style='margin-bottom:0pt;margin-bottom:.0001pt'><span
+lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoBodyText style='margin-bottom:0pt;margin-bottom:.0001pt'><span
+lang=EN-US>Architecture of the sparse Hopfield network can be chosen in a
+number of ways:</span></p>
+
+<p class=MsoBodyText align=left style='margin-top:0pt;margin-right:0pt;
+margin-bottom:0pt;margin-left:36.0pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-18.0pt;mso-list:l0 level1 lfo4;tab-stops:list 36.0pt'><![if !supportLists]><span
+lang=EN-US>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><i><span lang=EN-US>Random architecture</span></i><span
+lang=EN-US> – certain number of connections are chosen to connect random pairs
+of neurons.</span></p>
+
+<p class=MsoBodyText align=left style='margin-top:0pt;margin-right:0pt;
+margin-bottom:0pt;margin-left:36.0pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-18.0pt;mso-list:l0 level1 lfo4;tab-stops:list 36.0pt'><![if !supportLists]><span
+lang=EN-US>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><i><span lang=EN-US>Adaptive architecture</span></i><span
+lang=EN-US> – location of connections is chosen so as to (sub-) maximize the
+associative performance of the network for a particular dataset
+[Dekhtyarenko2004, Dekhtyarenko2005].</span></p>
+
+<p class=MsoBodyText align=left style='margin-top:0pt;margin-right:0pt;
+margin-bottom:0pt;margin-left:36.0pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-18.0pt;mso-list:l0 level1 lfo4;tab-stops:list 36.0pt'><![if !supportLists]><span
+lang=EN-US>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><i><span lang=EN-US>Cellular architecture</span></i><span
+lang=EN-US> – local connectivity pattern. Only neighboring neurons are
+connected. This architecture favors hardware implementation and is inspired by
+Cellular Neural Network (CNN) paradigm [Chua1988]. It provides the smallest
+value of total connection length what is crucial in some applications.</span></p>
+
+<p class=MsoBodyText align=left style='margin-top:0pt;margin-right:0pt;
+margin-bottom:0pt;margin-left:36.0pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-18.0pt;mso-list:l0 level1 lfo4;tab-stops:list 36.0pt'><![if !supportLists]><span
+lang=EN-US>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><i><span lang=EN-US>Small-World architecture </span></i><span
+lang=EN-US>–<i> </i>it takes the best of two worlds – the associative
+performance of the network with random architecture and mostly local
+connectivity pattern of the cellular network.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-US
+style='mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<table border=1 cellspacing=0 cellpadding=0 style='border-collapse:collapse;
+ border:none;mso-border-alt:solid windowtext .5pt;mso-padding-alt:0pt 5.4pt 0pt 5.4pt'>
+ <tr>
+  <td width=106 valign=top style='width:79.15pt;border:solid windowtext .5pt;
+  padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><span
+  lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:
+  EN-US'><o:p></o:p></span></p>
+  </td>
+  <td width=114 valign=top style='width:85.55pt;border:solid windowtext .5pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><b><i><span lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:
+  12.0pt;mso-ansi-language:EN-US'>Fully-connected<o:p></o:p></span></i></b></p>
+  <p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><b><i><span
+  lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:
+  EN-US'><o:p></o:p></span></i></b></p>
+  </td>
+  <td width=126 valign=top style='width:94.15pt;border:solid windowtext .5pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><b><i><span lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:
+  12.0pt;mso-ansi-language:EN-US'>Sparse with Adaptive Architecture<o:p></o:p></span></i></b></p>
+  </td>
+  <td width=122 valign=top style='width:91.35pt;border:solid windowtext .5pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><b><i><span lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:
+  12.0pt;mso-ansi-language:EN-US'>Sparse with Random Architecture<o:p></o:p></span></i></b></p>
+  </td>
+  <td width=108 valign=top style='width:80.95pt;border:solid windowtext .5pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><b><i><span lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:
+  12.0pt;mso-ansi-language:EN-US'>Small-World Architecture<o:p></o:p></span></i></b></p>
+  </td>
+  <td width=122 valign=top style='width:91.35pt;border:solid windowtext .5pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><b><i><span lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:
+  12.0pt;mso-ansi-language:EN-US'>Cellular Architecture (regular grid)<o:p></o:p></span></i></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=106 valign=top style='width:79.15pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><i><span lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:
+  12.0pt;mso-ansi-language:EN-US'>Implementation class<o:p></o:p></span></i></p>
+  </td>
+  <td width=114 valign=top style='width:85.55pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:
+  12.0pt;mso-ansi-language:EN-US'>FullProjectiveNet<o:p></o:p></span></p>
+  </td>
+  <td width=126 valign=top style='width:94.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:
+  12.0pt;mso-ansi-language:EN-US'>AdaptiveCellularNet<o:p></o:p></span></p>
+  </td>
+  <td width=122 valign=top style='width:91.35pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:
+  12.0pt;mso-ansi-language:EN-US'>PseudoInverseNet<o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:
+  12.0pt;mso-ansi-language:EN-US'>HebbianCellularNet<o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:
+  12.0pt;mso-ansi-language:EN-US'>DeltaCellularNet<o:p></o:p></span></p>
+  </td>
+  <td width=108 valign=top style='width:80.95pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:
+  12.0pt;mso-ansi-language:EN-US'>SmallWorldNet<o:p></o:p></span></p>
+  </td>
+  <td width=122 valign=top style='width:91.35pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:
+  12.0pt;mso-ansi-language:EN-US'>PseudoInverseNet<o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:
+  12.0pt;mso-ansi-language:EN-US'>HebbianCellularNet<o:p></o:p></span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:
+  12.0pt;mso-ansi-language:EN-US'>DeltaCellularNet<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=106 valign=top style='width:79.15pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><i><span lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:
+  12.0pt;mso-ansi-language:EN-US'>Associative performance<o:p></o:p></span></i></p>
+  </td>
+  <td width=114 style='width:85.55pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:14.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-US'>*****<o:p></o:p></span></p>
+  </td>
+  <td width=126 style='width:94.15pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:14.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-US'>****<o:p></o:p></span></p>
+  </td>
+  <td width=122 style='width:91.35pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:14.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-US'>***<o:p></o:p></span></p>
+  </td>
+  <td width=108 style='width:80.95pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:14.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-US'>**<o:p></o:p></span></p>
+  </td>
+  <td width=122 style='width:91.35pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:14.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-US'>*<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=106 valign=top style='width:79.15pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><i><span lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:
+  12.0pt;mso-ansi-language:EN-US'>Total connection length (the smaller the
+  better)<o:p></o:p></span></i></p>
+  </td>
+  <td width=114 style='width:85.55pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:14.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-US'>*<o:p></o:p></span></p>
+  </td>
+  <td width=126 style='width:94.15pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:14.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-US'>**<o:p></o:p></span></p>
+  </td>
+  <td width=122 style='width:91.35pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:14.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-US'>**<o:p></o:p></span></p>
+  </td>
+  <td width=108 style='width:80.95pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:14.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-US'>***<o:p></o:p></span></p>
+  </td>
+  <td width=122 style='width:91.35pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:14.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-US'>****<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=106 valign=top style='width:79.15pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><i><span lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:
+  12.0pt;mso-ansi-language:EN-US'>Number of weights (the smaller the better)<o:p></o:p></span></i></p>
+  </td>
+  <td width=114 style='width:85.55pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:14.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-US'>*<o:p></o:p></span></p>
+  </td>
+  <td width=126 style='width:94.15pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:14.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-US'>*****<o:p></o:p></span></p>
+  </td>
+  <td width=122 style='width:91.35pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:14.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-US'>*****<o:p></o:p></span></p>
+  </td>
+  <td width=108 style='width:80.95pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:14.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-US'>*****<o:p></o:p></span></p>
+  </td>
+  <td width=122 style='width:91.35pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:14.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-US'>*****<o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoBodyText2 style='text-align:justify'><span lang=EN-US
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-weight:normal'>Note:
+Comparison of associative performance for Sparse Adaptive/Sparse
+Random/Small-World/Cellular networks is given subject to the equal number of
+weights.<o:p></o:p></span></p>
+
+<p class=MsoBodyText2 style='text-align:justify'><span lang=EN-US
+style='font-weight:normal'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoBodyText2 style='text-align:justify'><span lang=EN-US
+style='font-weight:normal'>There are a number of <i>learning rules </i>(LR)
+that can be used to train the sparse Hopfield network. Here is a brief summary
+of implemented LRs.<o:p></o:p></span></p>
+
+<p class=MsoBodyText2 style='text-align:justify'><span lang=EN-US
+style='font-weight:normal'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<table border=1 cellspacing=0 cellpadding=0 style='border-collapse:collapse;
+ border:none;mso-border-alt:solid windowtext .5pt;mso-padding-alt:0pt 5.4pt 0pt 5.4pt'>
+ <tr>
+  <td width=143 valign=top style='width:107.2pt;border:solid windowtext .5pt;
+  padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoBodyText2 style='text-align:justify'><![if !supportEmptyParas]>&nbsp;<![endif]><span
+  lang=EN-US style='font-weight:normal'><o:p></o:p></span></p>
+  </td>
+  <td width=143 style='width:107.2pt;border:solid windowtext .5pt;border-left:
+  none;mso-border-left-alt:solid windowtext .5pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoBodyText2 align=center style='text-align:center'><i><span
+  lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>Projective<o:p></o:p></span></i></p>
+  </td>
+  <td width=143 style='width:107.2pt;border:solid windowtext .5pt;border-left:
+  none;mso-border-left-alt:solid windowtext .5pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoBodyText2 align=center style='text-align:center'><i><span
+  lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>Perceptron
+  (Hebbian)<o:p></o:p></span></i></p>
+  </td>
+  <td width=143 style='width:107.25pt;border:solid windowtext .5pt;border-left:
+  none;mso-border-left-alt:solid windowtext .5pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoBodyText2 align=center style='text-align:center'><i><span
+  lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>Delta Rule<o:p></o:p></span></i></p>
+  </td>
+  <td width=143 style='width:107.25pt;border:solid windowtext .5pt;border-left:
+  none;mso-border-left-alt:solid windowtext .5pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoBodyText2 align=center style='text-align:center'><i><span
+  lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>Pseudo-Inverse<o:p></o:p></span></i></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=143 valign=top style='width:107.2pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><i><span lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:
+  12.0pt;mso-ansi-language:EN-US'>Associative performance<o:p></o:p></span></i></p>
+  </td>
+  <td width=143 style='width:107.2pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:14.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-US'>*<o:p></o:p></span></p>
+  </td>
+  <td width=143 style='width:107.2pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:14.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-US'>****<o:p></o:p></span></p>
+  </td>
+  <td width=143 style='width:107.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:14.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-US'>****<o:p></o:p></span></p>
+  </td>
+  <td width=143 style='width:107.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:14.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-US'>****<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=143 valign=top style='width:107.2pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><i><span lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:
+  12.0pt;mso-ansi-language:EN-US'>Iterative<o:p></o:p></span></i></p>
+  </td>
+  <td width=143 style='width:107.2pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-US'>no<o:p></o:p></span></p>
+  </td>
+  <td width=143 style='width:107.2pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-US'>yes<o:p></o:p></span></p>
+  </td>
+  <td width=143 style='width:107.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-US'>yes<o:p></o:p></span></p>
+  </td>
+  <td width=143 style='width:107.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-US'>no<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=143 valign=top style='width:107.2pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal><i><span lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:
+  12.0pt;mso-ansi-language:EN-US'>Possibility of incremental learning/deletion<o:p></o:p></span></i></p>
+  </td>
+  <td width=143 style='width:107.2pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-US'>yes<o:p></o:p></span></p>
+  </td>
+  <td width=143 style='width:107.2pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-US'>no<o:p></o:p></span></p>
+  </td>
+  <td width=143 style='width:107.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-US'>no<o:p></o:p></span></p>
+  </td>
+  <td width=143 style='width:107.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-US'>yes<o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoBodyText2 style='text-align:justify'><span lang=EN-US
+style='font-weight:normal'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoBodyText2 style='text-align:justify'><span lang=EN-US
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-weight:normal'>Note: In
+Projective learning rule the weight matrix of fully connected network is
+obtained by [Personnaz1986] and then all connections that do not satisfy
+architectural constrains are simply cut.<o:p></o:p></span></p>
+
+<p class=MsoBodyText2 style='text-align:justify'><span lang=EN-US
+style='font-weight:normal'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<h1><a name="_Toc111886147"><span lang=EN-US style='font-size:16.0pt;
+mso-bidi-font-size:12.0pt'>Library Description</span></a></h1>
+
+<p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><a
+href="Associative_Neural_Networks_Library.files/Library.15.08.2005.zip">The
+given release</a> is of <i>August 15, 2005</i>.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoBodyText style='margin-bottom:0pt;margin-bottom:.0001pt'><span
+lang=EN-US>Library allows creating and testing various <i>Associative Neural
+Networks</i> (most of them are based on <i>Hopfield model</i> [Hopfield1982]).
+All networks function in discrete time with bipolar (+1/-1) states and
+synchronous convergence mode. </span></p>
+
+<p class=MsoBodyText style='margin-bottom:0pt;margin-bottom:.0001pt'><span
+lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoBodyText style='margin-bottom:0pt;margin-bottom:.0001pt'><span
+lang=EN-US>Testing functions allow tracking the evolution of network properties
+during the training or with the change of network parameters.</span></p>
+
+<p class=MsoBodyText style='margin-bottom:0pt;margin-bottom:.0001pt'><span
+lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-US
+style='mso-ansi-language:EN-US'>One of the most important network
+characteristics is <i>Attraction Radius</i>, which quantifies the network
+performance as associative memories. It is possible to find either <i>absolute</i>
+value of network attraction radius (measured as Hamming distance
+[test.cpp::getRAttraction] function), or it’s <i>normalized</i> value
+[test.cpp::getNormalizedRAttraction]. <o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<h1><a name="_Toc111886148"><span lang=EN-US style='font-size:16.0pt;
+mso-bidi-font-size:12.0pt'>Implemented Network Models</span></a><span
+lang=EN-US style='font-size:16.0pt;mso-bidi-font-size:12.0pt'><o:p></o:p></span></h1>
+
+<p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-US
+style='mso-ansi-language:EN-US'>class <b>FullNet</b> – abstract base class for
+fully connected models.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-US
+style='mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-US
+style='mso-ansi-language:EN-US'>class <b>CellularNet</b> - abstract base class
+for sparsely connected models, provides efficient weights storage and
+manipulation.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-US
+style='mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-US
+style='mso-ansi-language:EN-US'>class <b>FullProjectiveNet</b> –
+fully-connected network with <i>Projective learning rule</i> [Personnaz1986].
+Implements <i>desaturation technique</i> [Gorodnichy1997] and various
+retraining methods that allow <i>network recovery</i> after the failure of some
+neurons (this implementation was used in [Reznik2003a]). <o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-US
+style='mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-US
+style='mso-ansi-language:EN-US'>class <b>PseudoInverseNet </b>– sparse network
+implementing <i>Pseudo-Inverse learning rule (PI LR)</i> [Brucoli1995], a
+learning rule that allows guaranteed storage of memory patterns as stable
+states for (almost) any network architecture. <o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-US
+style='mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-US
+style='mso-ansi-language:EN-US'>class <b>AdaptiveCellularNet</b> – sparse
+network with PI LR and architecture that is changing depending on a dataset.
+That is for the specified number of connection network itself finds the
+architecture that maximizes the associative performance on a given dataset
+[Dekhtyarenko2004, Dekhtyarenko2005].<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-US
+style='mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-US
+style='mso-ansi-language:EN-US'>class <b>SmallWorldNet</b> – sparse network
+with <i>Small-World</i> architecture [WattsStrogatz1998] and PI LR. Apart from
+the originally proposed random rewiring SmallWorldNet implements new systematic
+rewiring procedure, which further improves the associative properties of the
+network using the same amount of shortcut connections [Dekhtyarenko2005a]. <o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-US
+style='mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-US
+style='mso-ansi-language:EN-US'>class <b>HebbianCellularNet</b> - sparse
+network with Perceptron (Hebbian) learning rule [Diederich1987].<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-US
+style='mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-US
+style='mso-ansi-language:EN-US'>class <b>DeltaCellularNet - </b>sparse network
+with Widrow-Hoff Delta learning rule [Widrow1960].<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-US
+style='mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-US
+style='mso-ansi-language:EN-US'>class <b>ModularNet</b> – growing <i>modular
+associative network</i> with large memory capacity [Reznik2003b].<span
+style="mso-spacerun: yes">  </span>As its basic building blocks (modules) it can
+use any of the network types mentioned above.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-US
+style='mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-US
+style='mso-ansi-language:EN-US'>class <b>BAMCellularNet</b> – sparse
+bi-directional associative memory (under construction).<span
+style="mso-spacerun: yes">  </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-US
+style='mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<h1><a name="_Toc111886149"><span lang=EN-US style='font-size:16.0pt;
+mso-bidi-font-size:12.0pt'>Compilation</span></a><span lang=EN-US
+style='font-size:16.0pt;mso-bidi-font-size:12.0pt'><o:p></o:p></span></h1>
+
+<p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-US
+style='mso-ansi-language:EN-US'>Run compileBorland.bat or compileMS.bat files.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-US
+style='mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-US
+style='mso-ansi-language:EN-US'>The library is being created in Win OS using
+Borland C++ Builder 5.0 with “Language compliance” compiler option set to
+“Borland”, therefore it requires a couple of tricks to compile it using
+Microsoft CL v. 12 (from MS Visual Studio 6.0)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l3 level1 lfo3;tab-stops:list 36.0pt'><![if !supportLists]><span
+lang=EN-US style='mso-ansi-language:EN-US'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US style='mso-ansi-language:EN-US'>#
+define for if (0) {} else for // scope of definition in “for” statements<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l3 level1 lfo3;tab-stops:list 36.0pt'><![if !supportLists]><span
+lang=EN-US style='mso-ansi-language:EN-US'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US style='mso-ansi-language:EN-US'>FORCE:MULTIPLE
+linker option<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<h1><a name="_Toc111886150"><span lang=EN-US style='font-size:16.0pt;
+mso-bidi-font-size:12.0pt'>Input</span></a></h1>
+
+<p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-US
+style='mso-ansi-language:EN-US'>Run nets.exe with the name of ini-file as its
+input. Provided file “_SmallWorld.ini” does the following:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-US
+style='mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-US
+style='mso-ansi-language:EN-US'>1. <b>SmallWorldNet</b> network is created with
+the following parameters:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l3 level1 lfo3;tab-stops:list 36.0pt'><![if !supportLists]><span
+lang=EN-US style='mso-ansi-language:EN-US'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US style='mso-ansi-language:EN-US'>dimension
+= 256<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l3 level1 lfo3;tab-stops:list 36.0pt'><![if !supportLists]><span
+lang=EN-US style='mso-ansi-language:EN-US'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US style='mso-ansi-language:EN-US'>neuron
+connection radius = 10 (connectivity degree of about 8%)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l3 level1 lfo3;tab-stops:list 36.0pt'><![if !supportLists]><span
+lang=EN-US style='mso-ansi-language:EN-US'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US style='mso-ansi-language:EN-US'>no
+diagonal weights <o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-US
+style='mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoBodyText style='margin-bottom:0pt;margin-bottom:.0001pt'><span
+lang=EN-US>2. The network is trained with the data from the file “_256x256.dat”
+(bipolar patterns with random equiprobable and independent components) for
+patterns #1-14 (testNum = 1, numStored = 1:15:1+). After each additional stored
+vector the network is tested and test results (including attraction radius –
+“attrR” field) are stored in the “_report.txt” file.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-US
+style='mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-US
+style='mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<h1><a name="_Toc111886151"><span lang=EN-US style='font-size:16.0pt;
+mso-bidi-font-size:12.0pt'>Output</span></a><span lang=EN-US style='font-size:
+16.0pt;mso-bidi-font-size:12.0pt'> <o:p></o:p></span></h1>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-US
+style='mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-US
+style='mso-ansi-language:EN-US'>In addition to the value of attraction radius
+output file “_report.txt” contains a lot of other useful information, such as
+network architecture properties (number of connections, total connection
+length, ...), weight matrix properties (norm, trace, asymmetry degree, ...),
+estimations of associative performance (kappa measure, min aligned local
+field), actual testing results (average number of iterations, error portion,
+...), etc. <o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-US
+style='mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-US
+style='mso-ansi-language:EN-US'>The results in the output file are easy to
+analyze using any table processor (MS Excel, ...).<span style="mso-spacerun:
+yes">  </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-US
+style='mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-US
+style='mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<h1><a name="_Toc111886152"><span lang=EN-US style='font-size:16.0pt;
+mso-bidi-font-size:12.0pt'>Author contact details</span></a><span lang=EN-US
+style='font-size:16.0pt;mso-bidi-font-size:12.0pt'><o:p></o:p></span></h1>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+lang=EN-US style='mso-bidi-font-size:10.0pt;font-family:"Courier New";
+mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+lang=EN-US style='mso-bidi-font-size:10.0pt;mso-ansi-language:EN-US'>If you
+have any questions or comments I’d be glad to hear from you.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+lang=EN-US style='mso-bidi-font-size:10.0pt;font-family:"Courier New";
+mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+lang=EN-US style='mso-bidi-font-size:10.0pt;font-family:"Courier New";
+mso-ansi-language:EN-US'>Oleksiy K. Dekhtyarenko, <i>PhD student<o:p></o:p></i></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+lang=EN-US style='font-size:10.0pt;font-family:"Courier New";mso-ansi-language:
+EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:8.0pt;font-family:Courier;
+mso-bidi-font-family:"Courier New CYR";mso-ansi-language:EN-US'>Institute of
+Mathematical Machines and Systems<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:8.0pt;font-family:Courier;
+mso-bidi-font-family:"Courier New";mso-ansi-language:EN-US'>Department of
+Neurotechnologies</span><span lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:
+8.0pt;font-family:Courier;mso-bidi-font-family:"Courier New CYR";mso-ansi-language:
+EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:8.0pt;font-family:Courier;
+mso-bidi-font-family:"Courier New";mso-ansi-language:EN-US'>Glushkov Ave. 42,
+Kiev 03187, Ukraine<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:8.0pt;font-family:Courier;
+mso-bidi-font-family:"Courier New";mso-ansi-language:EN-US'>Tel.:<span
+style="mso-spacerun: yes">   </span></span><span lang=EN-US style='font-size:
+10.0pt;mso-bidi-font-size:8.0pt;font-family:Courier;mso-bidi-font-family:"Courier New CYR";
+mso-ansi-language:EN-US'>+380</span><span lang=EN-US style='font-size:10.0pt;
+mso-bidi-font-size:8.0pt;font-family:Courier;mso-bidi-font-family:"Courier New";
+mso-ansi-language:EN-US'>-</span><span lang=EN-US style='font-size:10.0pt;
+mso-bidi-font-size:8.0pt;font-family:Courier;mso-bidi-font-family:"Courier New CYR";
+mso-ansi-language:EN-US'>44</span><span lang=EN-US style='font-size:10.0pt;
+mso-bidi-font-size:8.0pt;font-family:Courier;mso-bidi-font-family:"Courier New";
+mso-ansi-language:EN-US'>-52</span><span lang=EN-US style='font-size:10.0pt;
+mso-bidi-font-size:8.0pt;font-family:Courier;mso-bidi-font-family:"Courier New CYR";
+mso-ansi-language:EN-US'>66221<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:8.0pt;font-family:Courier;
+mso-bidi-font-family:"Courier New";mso-ansi-language:EN-US'>Fax:<span
+style="mso-spacerun: yes">    </span></span><span lang=EN-US style='font-size:
+10.0pt;mso-bidi-font-size:8.0pt;font-family:Courier;mso-bidi-font-family:"Courier New CYR";
+mso-ansi-language:EN-US'>+380</span><span lang=EN-US style='font-size:10.0pt;
+mso-bidi-font-size:8.0pt;font-family:Courier;mso-bidi-font-family:"Courier New";
+mso-ansi-language:EN-US'>-</span><span lang=EN-US style='font-size:10.0pt;
+mso-bidi-font-size:8.0pt;font-family:Courier;mso-bidi-font-family:"Courier New CYR";
+mso-ansi-language:EN-US'>44</span><span lang=EN-US style='font-size:10.0pt;
+mso-bidi-font-size:8.0pt;font-family:Courier;mso-bidi-font-family:"Courier New";
+mso-ansi-language:EN-US'>-52</span><span lang=EN-US style='font-size:10.0pt;
+mso-bidi-font-size:8.0pt;font-family:Courier;mso-bidi-font-family:"Courier New CYR";
+mso-ansi-language:EN-US'>66457 <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:8.0pt;font-family:Courier;
+mso-bidi-font-family:"Courier New";mso-ansi-language:EN-US'>Mobile:
++380-67-2366157<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:8.0pt;font-family:Courier;
+mso-bidi-font-family:"Courier New";mso-ansi-language:EN-US'>E-mail: <a
+href="mailto:name@domain">name@domain</a>, name=olexii, domain=mail.ru<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:
+8.0pt;font-family:Courier;mso-bidi-font-family:"Courier New";mso-ansi-language:
+EN-US'>ICQ:<span style="mso-spacerun: yes">    </span>86473901</span><span
+lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Courier;
+mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<h1><a name="_Toc111886153"><span lang=EN-US style='font-size:16.0pt;
+mso-bidi-font-size:12.0pt'>References</span></a><span lang=EN-US
+style='font-size:16.0pt;mso-bidi-font-size:12.0pt'><o:p></o:p></span></h1>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-US
+style='mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<table border=0 cellspacing=0 cellpadding=0 style='border-collapse:collapse;
+ mso-padding-alt:0pt 5.4pt 0pt 5.4pt'>
+ <tr>
+  <td width=134 valign=top style='width:100.15pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='text-align:justify'><span lang=EN-US
+  style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-US'>[Brucoli1995]<o:p></o:p></span></p>
+  </td>
+  <td width=505 valign=top style='width:378.4pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='text-align:justify'><span lang=EN-US
+  style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-US'>M.
+  Brucoli; L. Carnimeo &amp; G. Grassi - &quot;Discrete-time cellular neural
+  networks for associative memories with learning and forgetting
+  capabilities&quot;, <i>IEEE Transactions on Circuits and Systems</i>, pp.
+  396–399, vol. 42, 1995 <o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=134 valign=top style='width:100.15pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='text-align:justify'><span lang=EN-US
+  style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-US'>[Chua1988]
+  <o:p></o:p></span></p>
+  <p class=MsoNormal style='text-align:justify'><![if !supportEmptyParas]>&nbsp;<![endif]><span
+  lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:
+  EN-US'><o:p></o:p></span></p>
+  </td>
+  <td width=505 valign=top style='width:378.4pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='text-align:justify'><span lang=EN-US
+  style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-US'>L.
+  Chua &amp; L. Yang - &quot;Cellular Neural Networks: Theory&quot;, IEEE
+  Transactions on Circuits and Systems, pp. 1257-1272, vol. 35(10), 1988<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=134 valign=top style='width:100.15pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='text-align:justify'><span lang=EN-US
+  style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-US'>[<a
+  href="Associative_Neural_Networks_Library.files/Dekhtyarenko2004.pdf">Dekhtyarenko2004</a>]
+  </span><span lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Arial Unicode MS";mso-ansi-language:EN-US'><o:p></o:p></span></p>
+  <p class=MsoNormal style='text-align:justify'><![if !supportEmptyParas]>&nbsp;<![endif]><span
+  lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:
+  EN-US'><o:p></o:p></span></p>
+  </td>
+  <td width=505 valign=top style='width:378.4pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='text-align:justify'><span lang=EN-US
+  style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-US'>O.
+  Dekhtyarenko; A. Reznik &amp; A. Sitchov - &quot;Associative Cellular Neural
+  Networks with Adaptive Architecture&quot;, in proc. of <i>The 8th IEEE
+  International Biannual Workshop on Cellular Neural Networks and their
+  Application (CNNA'04)</i>, pp. 219-224, Budapest, Hungary, July 22-24, 2004<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=134 valign=top style='width:100.15pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='text-align:justify'><span lang=EN-US
+  style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-US'>[<a
+  href="Associative_Neural_Networks_Library.files/Dekhtyarenko2005.pdf">Dekhtyarenko2005</a>]
+  </span><span lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Arial Unicode MS";mso-ansi-language:EN-US'><o:p></o:p></span></p>
+  <p class=MsoNormal style='text-align:justify'><![if !supportEmptyParas]>&nbsp;<![endif]><span
+  lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:
+  EN-US'><o:p></o:p></span></p>
+  </td>
+  <td width=505 valign=top style='width:378.4pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='text-align:justify'><span lang=EN-US
+  style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-US'>O.
+  Dekhtyarenko; V. Tereshko &amp; C. Fyfe - &quot;Phase transition in sparse
+  associative neural networks&quot;, in proc. of <i>European Symposium on
+  Artificial Neural Networks (ESANN'05)</i>, Bruges, Belgium, April 27-29, 2005<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=134 valign=top style='width:100.15pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='text-align:justify'><span lang=EN-US
+  style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-US'>[<a
+  href="Associative_Neural_Networks_Library.files/Dekhtyarenko2005a.pdf">Dekhtyarenko2005a</a>]
+  </span><span lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Arial Unicode MS";mso-ansi-language:EN-US'><o:p></o:p></span></p>
+  <p class=MsoNormal style='text-align:justify'><![if !supportEmptyParas]>&nbsp;<![endif]><span
+  lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:
+  EN-US'><o:p></o:p></span></p>
+  </td>
+  <td width=505 valign=top style='width:378.4pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='text-align:justify'><span lang=EN-US
+  style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-US'>O.
+  Dekhtyarenko - &quot;Systematic Rewiring in Associative Neural Networks with
+  Small-World Architecture&quot;, in proc. of <i>International Joint Conference
+  on Neural Networks (IJCNN'05)</i>, pp. 1178-1181, Montreal, Quebec, Canada,
+  July 31 - August 4, 2005 (<a
+  href="Associative_Neural_Networks_Library.files/Dekhtyarenko2005a-Poster.pdf">poster</a>)<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=134 valign=top style='width:100.15pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='text-align:justify'><span lang=EN-US
+  style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-US'>[Diederich1987]
+  </span><span lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Arial Unicode MS";mso-ansi-language:EN-US'><o:p></o:p></span></p>
+  <p class=MsoNormal style='text-align:justify'><![if !supportEmptyParas]>&nbsp;<![endif]><span
+  lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:
+  EN-US'><o:p></o:p></span></p>
+  </td>
+  <td width=505 valign=top style='width:378.4pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='text-align:justify'><span lang=EN-US
+  style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-US'>S.
+  Diederich &amp; M. Opper - &quot;Learning of correlated patterns in
+  spin-glass networks by local learning rules&quot;, <i>Physical Review Letters</i>,
+  pp. 949-952, vol. 58(9), 1987<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=134 valign=top style='width:100.15pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='text-align:justify'><span lang=EN-US
+  style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-US'>[Gorodnichy1997]<o:p></o:p></span></p>
+  </td>
+  <td width=505 valign=top style='width:378.4pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='text-align:justify'><span lang=EN-US
+  style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-US'>D.
+  Gorodnichy &amp; A. Reznik - &quot;Increasing Attraction of Pseudo-Inverse
+  Autoassociative Networks&quot;, <i>Neural Processing Letters</i>, pp.
+  123-127, vol. 5(2), 1997<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=134 valign=top style='width:100.15pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='text-align:justify'><span lang=EN-US
+  style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-US'>[Hopfield1982]<o:p></o:p></span></p>
+  </td>
+  <td width=505 valign=top style='width:378.4pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='text-align:justify'><span lang=EN-US
+  style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-US'>J.
+  Hopfield - &quot;Neural networks and physical systems with emergent
+  collective computational abilities.&quot;, <i>Proc Natl Acad Sci USA</i>, pp.
+  2554-2558, vol. 79(8), 1982<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=134 valign=top style='width:100.15pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='text-align:justify'><span lang=EN-US
+  style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-US'>[Personnaz1986]<o:p></o:p></span></p>
+  </td>
+  <td width=505 valign=top style='width:378.4pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='text-align:justify'><span lang=EN-US
+  style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-US'>L.
+  Personnaz; I. Guyon &amp; G. Dreyfus - &quot;Collective computational
+  properties of neural networks: New learning mechanisms&quot;, <i>Physical
+  Review A</i>, pp. 4217–4228, vol. 34, 1986<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=134 valign=top style='width:100.15pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='text-align:justify'><span lang=EN-US
+  style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-US'>[<a
+  href="Associative_Neural_Networks_Library.files/Reznik2003a.pdf">Reznik2003a</a>]
+  </span><span lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Arial Unicode MS";mso-ansi-language:EN-US'><o:p></o:p></span></p>
+  <p class=MsoNormal style='text-align:justify'><![if !supportEmptyParas]>&nbsp;<![endif]><span
+  lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:
+  EN-US'><o:p></o:p></span></p>
+  </td>
+  <td width=505 valign=top style='width:378.4pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='text-align:justify'><span lang=EN-US
+  style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-US'>A.
+  Reznik; A. Sitchov; O. Dekhtyarenko &amp; D. Nowicki - &quot;Associative
+  memories with &quot;killed&quot; neurons: the methods of recovery&quot;, in
+  proc. of <i>International Joint Conference on Neural Networks (IJCNN'03)</i>,
+  Portland, Oregon, US, July 20-24, 2003<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=134 valign=top style='width:100.15pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='text-align:justify'><span lang=EN-US
+  style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-US'>[<a
+  href="Associative_Neural_Networks_Library.files/Reznik2003b.pdf">Reznik2003b</a>]
+  </span><span lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Arial Unicode MS";mso-ansi-language:EN-US'><o:p></o:p></span></p>
+  <p class=MsoNormal style='text-align:justify'><![if !supportEmptyParas]>&nbsp;<![endif]><span
+  lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:
+  EN-US'><o:p></o:p></span></p>
+  </td>
+  <td width=505 valign=top style='width:378.4pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='text-align:justify'><span lang=EN-US
+  style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-US'>A.
+  Reznik &amp; O. Dekhtyarenko - &quot;Modular neural associative memory
+  capable of storage of large amounts of data&quot;, in proc. of <i>International
+  Joint Conference on Neural Networks (IJCNN'03)</i>, Portland, Oregon, US,
+  July 20-24, 2003<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=134 valign=top style='width:100.15pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='text-align:justify'><span lang=EN-US
+  style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-US'>[WattsStrogatz1998]
+  </span><span lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Arial Unicode MS";mso-ansi-language:EN-US'><o:p></o:p></span></p>
+  <p class=MsoNormal style='text-align:justify'><![if !supportEmptyParas]>&nbsp;<![endif]><span
+  lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:
+  EN-US'><o:p></o:p></span></p>
+  </td>
+  <td width=505 valign=top style='width:378.4pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='text-align:justify'><span lang=EN-US
+  style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-US'>D.
+  Watts &amp; S. Strogatz - &quot;Collective dynamics of 'small-world' networks.&quot;,
+  <i>Nature</i>, pp. 440-442, vol. 393, 1998<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=134 valign=top style='width:100.15pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='text-align:justify'><span lang=EN-US
+  style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-US'>[Widrow1960]
+  </span><span lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+  font-family:"Arial Unicode MS";mso-ansi-language:EN-US'><o:p></o:p></span></p>
+  <p class=MsoNormal style='text-align:justify'><![if !supportEmptyParas]>&nbsp;<![endif]><span
+  lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:
+  EN-US'><o:p></o:p></span></p>
+  </td>
+  <td width=505 valign=top style='width:378.4pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=MsoNormal style='text-align:justify'><span lang=EN-US
+  style='font-size:10.0pt;mso-bidi-font-size:12.0pt;mso-ansi-language:EN-US'>B.
+  Widrow &amp; M.E. Hoff, J. - &quot;Adaptive switching circuits&quot;, <i>IRE
+  Western Electric Show and Convention Record</i>, pp. 96-104, vol. 4, 1960<o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-US
+style='mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+</div>
+
+</body>
+
+</html>

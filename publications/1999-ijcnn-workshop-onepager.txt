@@ -1,0 +1,64 @@
+Title:
+Designing High-Capacity Neural Networks for Storing, Retrieving and
+Forgetting Patterns in Real-Time
+
+By: 
+Dmitry O. Gorodnichy and Alexandre M. Reznik
+
+
+Abstract:
+
+In designing neural networks for pattern recognition the most
+challenging problems are the following. 
+1) How to learn a network so that a) it can retrieve as many patterns
+as possible, and b) it can retrieve them from as much noise as possible;
+2) How to make learning fast so that patterns can be stored on-line;
+3) How to make retrieval fast;
+4) How to get rid of useless data, i.e. how to continuously update the
+memory when new data are coming.
+The solutions to these problems were found at the Institute of
+Mathematical Machines and Systems of Ukrainian National Academy of
+Sciences, where a neurocomputer capable of storing and retrieving data
+in real-time was designed.
+
+The neurocomputer uses a non-iterative learning technique based on the
+Desaturated Pseudo-Inverse rule. This technique allows one to store in
+real-time up to 80%N patterns (as attractors with non-zero attraction
+basins), where N is the size of the neural network.  When the number of
+patterns exceeds the capacity of the network, the Dynamic Desaturation
+rule is applied. This rule allows the neurocomputer to store patterns
+partially and also to remove from memory obsolete data.
+
+In retrieval, the Update Flow neuroprocessing technique is used.
+This technique is known to be very efficient for neural networks which
+evolve in time. It also automatically detects spurious dynamic attractors.
+
+In the talk, we will describe in detail each technique contributing to
+the success of our project. The emphasis will be given to the description
+of non-iterative learning technique which provides a valid alternative to
+the conventional time-consuming iterative learning methods.
+
+
+Keywords: attractor, Hopfield-like network, associative memory, weight
+matrix
+
+References:
+
+D.O. Gorodnichy.  The Optimal Value of Self-connection, In current
+proceedings of IJCNN'99.
+
+A.M.  Reznik. Non-Iterative Learning for Neural Networks,
+in current proceedings of IJCNN'99, s. 5.5, 1999
+
+D.O. Gorodnichy. Investigation and Design of High Performance Fully
+Connected Neural Networks (in Russian), PhD dissertation,  Institute of
+Mathematical Machines and Systems of Ukrainian National Academy of
+Sciences, Sept. 1997
+
+D.O. Gorodnichy and A.M. Reznik. Increasing Attraction of Pseudo-Inverse
+Autoassociative Networks, Neural Processing Letters, vol. 5, N. 2,
+pp. 123-127, 1997.
+
+D.O. Gorodnichy. A Way to Improve Error Correction Capability of Hopfield
+Associative Memory in the Case Of Saturation, HELNET 94-95 Workshop
+Proceedings, VU University Press, Amsterdam, pp. 198-212, 1996

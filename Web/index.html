@@ -1,0 +1,279 @@
+<HTML>
+<HEAD>
+
+<TITLE>Associative Neural Network Library</TITLE>
+
+<meta Name="keywords"
+Content="Open source, pseudo-inverse, pseudoinverse,  attractor, associative memory, associative neural network, 
+neural network, machine learning, source, code, cpp code, free, downloadable, download, Associative Neural Network Library">
+
+<link rel="StyleSheet"   href="/main.css" type="text/css">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style>
+<!-
+a:active { font-weight: bold; text-decoration: underline }
+A:visited { font-weight: bold; color:#993300; text-decoration: none;}
+A:link { font-weight: bold; color:#12522E; text-decoration: none;}
+A:hover { color:#12522E; text-decoration: underline;}
+A:border { border: 1px solid black; }
+->
+  </style>
+</head>
+<body bgcolor="#ffffff">
+
+<table width="758" border="0" cellspacing="0" cellpadding="0">
+    <tr><td width="758">
+ <p align="right">
+
+      <img  src="../../images/iit_signature_index_e.gif"  alt="NRC-IIT - Institute for Information Technology" align="left"  width="200" >
+      <font size="6" color="#000080"><b>Associative Neural Network Library</b></font></p>  
+ 
+    <p align="right">
+     <font size="2">
+     <a href="http://www.nrc-cnrc.gc.ca/">NRC-CNRC</a> |                  
+     <a href="http://iit-iti.nrc-cnrc.gc.ca">IIT-ITI</a> |                   
+     <a href="../..">Video Recognition Systems</a>    |     
+        <a href="..">Face Recognition in Video</a>   
+    
+      </p>
+      <img height="1" src="http://iit-iti.nrc-cnrc.gc.ca/images/sidenav_line.gif" width="100%">
+
+<!------------------------------------------------ end of header --------------------------------------------------------------------------->               
+
+
+
+      <h2 align="center">
+      <font size="5">Pseudo-inverse&nbsp;&amp; other high performance&nbsp;<br>    
+ associative&nbsp;neural networks</font></h2>     
+
+<ul>
+
+<h4>
+1. What's in name?<i> </i>What it is ?</h4> 
+
+These neural networks are referred to as     
+<ul>
+<li>
+
+<u>
+
+pseudo-inverse networks</u> - for using Moore-Penrose pseudo-inverse V<sup>+</sup> in computing  
+the synapses 
+<li>    <u>    projection networks</u> - for synaptic (weight) matrix C=VV<sup>+</sup>  being 
+  the projection 
+<li>
+
+<u>
+
+Hopfield-like networks</u> - for being binary and fully-connected in the stage of 
+learning
+<li>
+
+<u>
+
+recurrent networks</u> - for evolving in time, based on external input and internal 
+memory
+<li>
+
+<u>
+
+attractor-based networks</u> - for&nbsp;storing patterns as attractors (i.e. stable states of     
+the network)     
+<li>
+
+<u>
+
+dynamic systems</u> - for allowing the dynamic systems theory to be applied 
+<li>
+
+<u>
+
+associative memory</u> - for being able to memorize and&nbsp;recall and&nbsp;patterns     
+associatively,     
+just as much as humans do     
+<li>
+<u> PINN memory </u>- pseudo-inverse neural network - based associative
+memory.
+</ul>
+
+<h4> 
+Eight reasons to like pseudo-inverse neural networks (PINN)&nbsp;</h4>     
+
+<ul>
+<li>
+It evolved from the network of <u> formal neurons</u> as defined by Hebb in 1949 and has many   
+<u> parallels with biological memory mechanisms</u>.  
+<li>
+It provides an <u>  analytical (close-form) solution</u>, the approximation of which is a well-known delta learning rule. 
+<li>
+The performance of the network can be very nicely <u>  analytically examined and 
+improved</u>.
+<li>
+It can <u>  update</u> the memory on fly <u> in real time</u>, storing patterns with a non-iterative learning rule.  
+
+<li> For a network of size N, it allows one to <u> store</u> (with <u>error-correction</u>!) 
+  up to 
+   for <u> M=70%N prototype</u>s,  
+using the desaturation mechanism. 
+
+<li> At the same time when <u> dealing with a continuous stream of data</u>, thanks to the desaturation mechanism, 
+the network will never get saturated and will always 
+maintain the 20%N capacity, always being able to converge to 20%N main attractors. 
+
+<li> 
+All this makes the network very <u> suitable for  on-line memorization and 
+recognition</u>, and also for  
+preprocessing binary patterns, as noise removing filter. 
+
+<li>
+Starting from a fully connected configuration, it can be converted to a <i>Small-World</i>     
+configuration of the much smaller size.&nbsp;     
+</ul>
+
+
+
+
+<h4>Critical example:&nbsp; </h4>     
+
+<blockquote>
+
+
+
+
+<h4>Applying PINN memory for <a href="/"> Perceptual Vision     
+  Systems</a> and <a href="/memory"> Face Recognition in Video</a>. </h4>    
+
+</blockquote>
+
+<h4>2. <i><u>Open Source codes and library:</u></i>&nbsp; </h4>    
+
+<h4>&gt;&gt; Basic code for associativelt storing and retrieving patterns with fully-connected PINN memory:     
+<a href="pinn.cpp">pinn.cpp</a> </h4>
+
+This is a one-file code, which is entirely self-contained and ready to be compiled and run.     
+What it does:     
+
+<ul>
+<li> It defines the CPINN class, which is used to create an associative memory
+<li> It takes a binary pattern, one at a time, and adds it to the memory - very fast
+(no iterating!)
+<li>
+It computes the level of remaining memory capacity, which is used to evaluate the
+network's recognition capability and to allow one to reconfigure the network, if
+required, to ensure the best performance (analytically!)
+<li>
+It recognizes stored patterns: when presented a new pattern, the memory finds
+the pattern the closest to it in associative sense and tells whether the retrieved pattern has been
+previously seen or not.
+</ul>
+
+
+<h4>&gt;&gt;Associative Neural Networks Library<a href="library.html">:     
+library.html</a> &nbsp; </h4>   
+
+
+<p>This is a C++ implementation of&nbsp; most known high-performance&nbsp;associative neural networks models, including those based on sparse    
+architectures and pseudo-inverse learning. For more details see:   
+ </p>
+
+
+<p><b><font size="3">High Performance Associative Neural Networks:  
+          Overview and Library.<br>
+</font>
+</b><font size="2">Alexey Dekhtyarenko and Dmitry Gorodnichy,&nbsp;<br> 
+Submitted to the Canadian Conference on Artificial Intelligence (AI'06), Quebec  
+City, Canada, July 7-9, 2006&nbsp;</font>  
+ </p>
+<p><b>&gt;&gt; Applying PINN to Face Recognition in Video </b><a href="library.html">: FRiV.cpp</a> &nbsp;<img src="../../ico/new-rotating.gif" border="0" width="60" height="25"> </p>
+<p>This is a C++ example that shows how to apply associative neural network to Face Recognition in Video, as presented in the publications below. </p>
+<p>This code is provided for free for educational purposes only. If you use, please reference one of the these publications.</p>
+<p><b><font color="#FF0000">November 2008. - &quot;Sorry, the FRiV is no longer available to public from this website. However, it is still available for educational purposes. Please contact Dmitry Gorodnichy, for more information.&quot; </font></b></p>
+<ul>
+  <li>Dmitry O. Gorodnichy <b>Video-based framework for face recognition in video. </b><b></b><br>
+        Second Workshop on Face Processing in Video (FPiV'05) in Proceedings of Second Canadian Conference on Computer and Robot Vision (CRV'05), pp. 330-338, Victoria, BC, Canada, 9-11 May, 2005. ISBN 0-7695-2319-6. NRC 48216.</li>
+  <li>Dmitry O. Gorodnichy, <b>Associative neural networks as means for low-resolution video-based recognition</b>. 
+      International Joint Conference on Neural Networks (IJCNN'05), Montreal, Quebec, Canada, July 31-August 4, 2005. NRC 48217.</li>
+</ul>
+  <p>        <b>3. Other references </b></p>
+</ul> 
+
+
+<blockquote>
+  In Russian:     
+  <ul>
+    <li>D.O. Gorodnichy. &quot;Designing High Performance Attractor-based Neural     
+  Networks&quot; ,&nbsp;<br>     
+ Candidate of Science (Ph.D.) Dissertation in Phys. &amp;     
+  Math. In speciality 01.05.03 - <i>Mathematical and software development for     
+  computer systems</i>. Institute of Mathematical Machines and Systems, Glushkov     
+  Cybernetics Center of the National Academy of Sciences of Ukraine, Kiev, 10     
+  September 1997. Written in Russian.<br>     
+  &#1044;.&#1054;.&#1043;&#1086;&#1088;&#1086;&#1076;&#1085;&#1080;&#1095;&#1080;&#1081;.     
+      &quot;&#1048;&#1089;&#1089;&#1083;&#1077;&#1076;&#1086;&#1074;&#1072;&#1085;&#1080;&#1077;     
+  &#1080; &#1088;&#1072;&#1079;&#1088;&#1072;&#1073;&#1086;&#1090;&#1082;&#1072;     
+  &#1074;&#1099;&#1089;&#1086;&#1082;&#1086;&#1087;&#1088;&#1086;&#1080;&#1079;&#1074;&#1086;&#1076;&#1080;&#1090;&#1077;&#1083;&#1100;&#1085;&#1099;&#1093;     
+  &#1087;&#1086;&#1083;&#1085;&#1099;&#1093;     
+  &#1085;&#1077;&#1081;&#1088;&#1086;&#1085;&#1085;&#1099;&#1093;     
+  &#1089;&#1077;&#1090;&#1077;&#1081;&quot;,&nbsp; <i><br>
+      &#1044;&#1080;&#1089;&#1089;&#1077;&#1088;&#1090;&#1072;&#1094;&#1080;&#1103;
+  &#1085;&#1072; &#1089;&#1086;&#1080;&#1089;&#1082;&#1072;&#1085;&#1080;&#1077;
+  &#1091;&#1095;&#1077;&#1085;&#1086;&#1081;
+  &#1089;&#1090;&#1077;&#1087;&#1077;&#1085;&#1080;
+  &#1082;&#1072;&#1085;&#1076;&#1080;&#1090;&#1072;&#1090;&#1072;
+  &#1092;&#1080;&#1079;&#1080;&#1082;&#1086;-&#1084;&#1072;&#1090;&#1077;&#1084;&#1072;&#1090;&#1080;&#1095;&#1077;&#1089;&#1082;&#1080;&#1093;
+  &#1085;&#1072;&#1091;&#1082;</i> , &#1053;&#1040;&#1053;     
+  &#1059;&#1082;&#1088;&#1072;&#1080;&#1085;&#1099;,     
+  &#1050;&#1080;&#1077;&#1074;, 1997:&nbsp; <a href="http://www.cv.iit.nrc.ca/~dmitry/pinn/gorodnichy-phd-pinn-1997.pdf"><br>     
+      Dissertation - pdf</a>, <a href="http://neurnews.iu4.bmstu.ru/univer/aspirant/ukr/gorod.htm">Official summary     
+      (Autoreferat)</a> <a href="http://neurnews.iu4.bmstu.ru/univer/aspirant/ukr/gorod.htm">     
+      - html</a>&nbsp;
+    </li>
+  </ul>
+  In English:&nbsp;     
+  <ul>
+    <li>
+  Dmitry O. Gorodnichy. &quot;The     
+  Influence of Self-Connection On The Performance of Pseudo-Inverse     
+  Autoassociative Networks&quot;, <a href="http://csit.narod.ru/journal/riu"><i>&quot;Radio     
+  Electronics. Computer Science. Control&quot; journal</i></a>, Vol. 2, No. 2,     
+  pp. 49-58, 2001.&nbsp; - <a href="RIU-01_2_2-gorodnichy.pdf">pdf</a>&nbsp;     
+    </li>
+    <li>
+  Papers on attractors and desaturation (optimal performance) of PINN : <a href="http://www.cs.ualberta.ca/~ai/alumni/dmitri/PINN/">visit     
+  UofA site</a> 
+    </li>
+    <li>
+  Papers on applying PINN for recognition in video: <a href="/doc">visit 
+  NRC site</a> 
+    </li>
+  </ul>
+</blockquote>
+
+<img height="1" src="http://iit-iti.nrc-cnrc.gc.ca/images/sidenav_line.gif" width="100%">
+
+
+    <!----------------------------- footer-----------------------------------------------------------------------------> 
+<table width="750" border="0" cellspacing="0" cellpadding="0">  
+    <tr>
+      <td width="25%">&nbsp; </td>
+       <td width="75%">
+      <p align="right">
+ <a href="/memory/pinn">
+ </a>
+      <font size="1"> 
+ <a href="www.videorecognition.com/memory/pinn">
+www.videorecognition.com/memory/pinn<br>
+ </a>
+ Site created and maintained by: <a href="http://iit-iti.nrc-cnrc.gc.ca/personnel/gorodnichy_dmitry_e.html">Dmitry  </a><a href="http://www.gorodnichy.net">Gorodnichy</a><br>     
+ Contributions are welcomed!<br>
+ First set: 2.X.2002. Last updated: 1.XII.2005</font></p> 
+      </td>
+    </tr>
+ 
+</table>
+
+      </td> </tr>
+</table>
+
+</body>
+</html>
