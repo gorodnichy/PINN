@@ -1,4 +1,9 @@
-### PINN: Associative Neural Networks based on Pseudo-inverse (aka Projection) Learning Rules
+# This library is developed as part of the Ph.D. work of Dmitry Gorodnichy.
+
+Now in 2017 everyone talks about fully-connected Deep Neural Networks. 
+They were the subject of my Ph.D. dissertation twenty years ago,  in 1997. 
+
+### PINN: Pseudo-inverse (aka Projection) Neural Network
 
 See http://www.videorecognition.com/memory/pinn/ for more details
 
