@@ -1,4 +1,4 @@
-# This library is developed as part of the Ph.D. work of Dmitry Gorodnichy.
+# Based on Ph.D. work of Dmitry Gorodnichy.
 
 Now in 2017 everyone talks about fully-connected Deep Neural Networks. 
 They were the subject of my Ph.D. dissertation twenty years ago,  in 1997. 
